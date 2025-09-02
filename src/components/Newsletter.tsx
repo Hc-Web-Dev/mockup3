@@ -72,24 +72,24 @@ const Newsletter: React.FC = () => {
 
             {/* Email Signup Form */}
             {!isSubscribed ? (
-              <form onSubmit={handleSubmit} className="max-w-md mx-auto">
-                <div className="flex gap-3">
+              <form onSubmit={handleSubmit} className="max-w-lg mx-auto">
+                <div className="flex flex-col sm:flex-row gap-4">
                   <input
                     type="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder="Enter your email address"
-                    className="flex-1 px-4 py-3 bg-slate-800 border border-slate-600 rounded-lg text-white placeholder-slate-400 focus:border-purple-400 focus:outline-none focus:ring-2 focus:ring-purple-400/20"
+                    className="flex-1 px-5 py-4 bg-slate-800 border border-slate-600 rounded-xl text-white placeholder-slate-400 focus:border-purple-400 focus:outline-none focus:ring-2 focus:ring-purple-400/20 text-base"
                     required
                   />
                   <button
                     type="submit"
-                    className="px-6 py-3 bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-400 hover:to-purple-500 rounded-lg font-semibold text-white transition-all duration-300 transform hover:scale-105 shadow-lg"
+                    className="px-8 py-4 bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-400 hover:to-purple-500 rounded-xl font-bold text-white text-lg transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-purple-500/25 border border-purple-400/20 min-w-[140px]"
                   >
                     Join Free
                   </button>
                 </div>
-                <p className="text-xs text-slate-400 mt-3">
+                <p className="text-sm text-slate-400 mt-4 text-center">
                   No spam, unsubscribe anytime. Join 2,347+ AI entrepreneurs.
                 </p>
               </form>
